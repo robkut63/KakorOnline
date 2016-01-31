@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sv" class="no-js">
+    <head>
+      <title>KakorOnline</title>
+      <meta charset="utf-8">
+      <link rel="icon" href="images/favicon.png" type="favicon"/>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="webbshop, skola, kakor, davai ruski, cheeki breeki iv damke, niko it's your cousin, let's go bowling">
+      <meta name="author" content="Simon Axelsson">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    </head>
+    <body class="demo-7">
+
+        <div id="container" class="container intro-effect-jam3">
+
+                <header class="header">
+                <div class="bg-img"><img src="images/background.jpg" alt="Background Image" /></div>
+                <div class="title">
+
+                    <h1>Om företaget</h1>
+                    <p class="subline">KakorOnline från första rutan</p>
+                    <p>Här kan du finna info om <strong>KakorOnline</strong> och &#8212; och livet som en <strong>kaka</strong></p>
+                </div>
+            </header>
+            <button class="trigger" data-info="Tryck eller bläddra för att se mer!"><span>Trigger</span></button>
+            <article class="content">
+                <div>
+                    <p>Historia!</p>
+                    <p>På den här sidan kan du läsa om KakorOnlines historia, hur vi blev till och varför vi finns kvar.</p>
+
+                    <p>KakorOnline grundades år 2016 av Simon Axelsson, en student med hunger för både kunskap och kakor. En dag fick han en idé, tänk om man kunde beställa hem kakor? Detta började snurra i huvudet på honom, och snart fanns en prototyp av tjänsten. Simon brann för kakor, och han var säker på att han inte var den enda som kände lika starkt som han för kakor. Hade han rätt, eller hade han rätt?</p>
+
+                    <p>När Simon färdigställt en produkthemsida så visade han sina närmsta vänner direkt. De tyckte att själva idén kändes lite barnslig, men efter ett inspirerande tal lett av Simon så var de väldigt intresserade. Vad tyckte de om då? Jo, aldrig tidigare hade de ens tänkt tanken att de ville beställa hem kakor, men nu hade de plötsligt ett behov. Det är så KakorOnline grundades, och fortsätter att växa, "build it and they will come" är ord som lett till tjänstens skapande.<p>
+
+                    <p>Äntligen hade KakorOnline investerare, och behovet av kakor hem till dörren växte dramatiskt efter att hans klasskamrater fått reda på idén, och senare spridit det. Innan han visste ordet av, så var hela skolan intresserade av Simons produktidé. Simon visste direkt att det är var en guldgruva. </p>
+
+                    <p>Och se på var vi är idag! Simon hade verkligen en av de bästa idéerna detta decennium.</p>
+
+                    <p><a href="../index.html">Tillbaka</a>
+                </div>
+            </article>
+
+        </div>
+        <script src="js/classie.js"></script>
+        <script>
+            (function() {
+
+                var ie = (function(){
+                    var undef,rv = -1;
+                    var ua = window.navigator.userAgent;
+                    var msie = ua.indexOf('MSIE ');
+                    var trident = ua.indexOf('Trident/');
+
+                    if (msie > 0) {
+
+                        rv = parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+                    } else if (trident > 0) {
+
+                        var rvNum = ua.indexOf('rv:');
+                        rv = parseInt(ua.substring(rvNum + 3, ua.indexOf('.', rvNum)), 10);
+                    }
+
+                    return ((rv > -1) ? rv : undef);
+                }());
+
+
+
+                var keys = [32, 37, 38, 39, 40], wheelIter = 0;
+
+                function preventDefault(e) {
+                    e = e || window.event;
+                    if (e.preventDefault)
+                    e.preventDefault();
+                    e.returnValue = false;
+                }
+
+                function keydown(e) {
+                    for (var i = keys.length; i--;) {
+                        if (e.keyCode === keys[i]) {
+                            preventDefault(e);
+                            return;
+                        }
+                    }
+                }
+
+                function touchmove(e) {
+                    preventDefault(e);
+                }
+
+                function wheel(e) {
+
+                }
+
+                function disable_scroll() {
+                    window.onmousewheel = document.onmousewheel = wheel;
+                    document.onkeydown = keydown;
+                    document.body.ontouchmove = touchmove;
+                }
+
+                function enable_scroll() {
+                    window.onmousewheel = document.onmousewheel = document.onkeydown = document.body.ontouchmove = null;
+                }
+
+                var docElem = window.document.documentElement,
+                    scrollVal,
+                    isRevealed,
+                    noscroll,
+                    isAnimating,
+                    container = document.getElementById( 'container' ),
+                    trigger = container.querySelector( 'button.trigger' );
+
+                function scrollY() {
+                    return window.pageYOffset || docElem.scrollTop;
+                }
+
+                function scrollPage() {
+                    scrollVal = scrollY();
+
+                    if( noscroll && !ie ) {
+                        if( scrollVal < 0 ) return false;
+
+                        window.scrollTo( 0, 0 );
+                    }
+
+                    if( classie.has( container, 'notrans' ) ) {
+                        classie.remove( container, 'notrans' );
+                        return false;
+                    }
+
+                    if( isAnimating ) {
+                        return false;
+                    }
+
+                    if( scrollVal <= 0 && isRevealed ) {
+                        toggle(0);
+                    }
+                    else if( scrollVal > 0 && !isRevealed ){
+                        toggle(1);
+                    }
+                }
+
+                function toggle( reveal ) {
+                    isAnimating = true;
+
+                    if( reveal ) {
+                        classie.add( container, 'modify' );
+                    }
+                    else {
+                        noscroll = true;
+                        disable_scroll();
+                        classie.remove( container, 'modify' );
+                    }
+
+                    setTimeout( function() {
+                        isRevealed = !isRevealed;
+                        isAnimating = false;
+                        if( reveal ) {
+                            noscroll = false;
+                            enable_scroll();
+                        }
+                    }, 600 );
+                }
+
+                // refreshing the page...
+                var pageScroll = scrollY();
+                noscroll = pageScroll === 0;
+
+                disable_scroll();
+
+                if( pageScroll ) {
+                    isRevealed = true;
+                    classie.add( container, 'notrans' );
+                    classie.add( container, 'modify' );
+                }
+
+                window.addEventListener( 'scroll', scrollPage );
+                trigger.addEventListener( 'click', function() { toggle( 'reveal' ); } );
+            })();
+        </script>
+    </body>
+</html>
