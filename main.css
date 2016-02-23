@@ -169,7 +169,7 @@
   text-decoration: none;
   color: #dddddd;
   font-weight: 400;
-  background: #7B3F00; /*notice me senpai*/
+  background: #7B3F00; /*text color*/
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
@@ -336,7 +336,7 @@
     cursor: pointer;
   }
   #cssmenu .submenu-button.submenu-opened {
-    background: #7B3F00; /*pls b0ss*/
+    background: #7B3F00; /*text color*/
   }
   #cssmenu ul ul .submenu-button {
     height: 34px;
