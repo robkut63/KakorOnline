@@ -67,7 +67,7 @@
 }
 #cssmenu {
   font-family: Montserrat, sans-serif;
-  background: #B67C3D; /*color of the menu itself*/
+  background: #000000; /*color of the menu itself*/
 }
 #cssmenu > ul > li {
   float: left;
@@ -91,12 +91,12 @@
   font-size: 12px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #5C3317;
+  color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: #8B5A2B;
+  color: #ffffff;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -171,7 +171,7 @@
   text-decoration: none;
   color: #dddddd;
   font-weight: 400;
-  background: #7B3F00; /*text color*/
+  background: #ffffff; /*submenu color*/
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
@@ -338,7 +338,7 @@
     cursor: pointer;
   }
   #cssmenu .submenu-button.submenu-opened {
-    background: #7B3F00; /*text color*/
+    background: #ffffff; /*text color*/
   }
   #cssmenu ul ul .submenu-button {
     height: 34px;
