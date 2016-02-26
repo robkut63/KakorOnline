@@ -1,5 +1,5 @@
 .nav a {
-  color: #5C3317;
+  color: #ffffff;
   font-size: 11px;
   font-weight: bold;
   padding: 14px 10px;
@@ -11,27 +11,29 @@
 }
 
 .headline {
-  background-image:url(images/background.jpg);
-  height: 500px;
+  background-image:url(images/0077_11.jpg);
+  height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .headline .container {
   position: relative;
-  top:100px;
+  top:500px;
 }
 
 .headline h1 {
-  color: #362819;
-  font-size: 48px;
-  font-family: 'Shift', sans-serif;
+  color: #D3D3D3;
+  font-size: 70px;
+  font-family: 'Shift', Kunstler Script;
   font-weight: bold;
+  float: left;
+
 }
 
 .headline p {
   font-size: 20px;
-  color: #3A3A38;
+  color: #ffffff;
 }
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
