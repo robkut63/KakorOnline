@@ -43,7 +43,7 @@
 #cssmenu ul li a,
 #cssmenu #menu-button {
   margin: 0;
-  padding: 0;
+  padding: 30;
   border: 0;
   list-style: none;
   line-height: 1;
