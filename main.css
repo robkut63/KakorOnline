@@ -11,7 +11,7 @@
 }
 
 .headline {
-  background-image:url(images/0077_11.jpg);
+  background-image:url(images/DSC_0077-67.jpg);
   height: 900px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@
 }
 
 .headline h1 {
-  color: #D3D3D3;
+  color: #808080;
   font-size: 70px;
   font-family: 'Shift', Kunstler Script;
   font-weight: bold;
@@ -53,6 +53,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 #cssmenu:after,
 #cssmenu > ul:after {
   content: ".";
