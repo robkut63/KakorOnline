@@ -1,5 +1,5 @@
 .nav a {
-  color: #ffffff;
+  color: #000000;
   font-size: 11px;
   font-weight: bold;
   padding: 14px 10px;
@@ -12,19 +12,19 @@
 
 .headline {
   background-image:url(images/DSC_0077-67.jpg);
-  height: 900px;
+  height: 900px; /*storlek på just den bilden*/
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .headline .container {
   position: relative;
-  top:500px;
+  top:100px;
 }
 
 .headline h1 {
-  color: #808080;
-  font-size: 70px;
+  color: #dddddd; /*title color*/
+  font-size: 80px;
   font-family: 'Shift', Kunstler Script;
   font-weight: bold;
   float: left;
@@ -33,7 +33,7 @@
 
 .headline p {
   font-size: 20px;
-  color: #ffffff;
+  color: #00ff00; /*color, p tagg*/
 }
 
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -68,7 +68,7 @@
 }
 #cssmenu {
   font-family: Montserrat, sans-serif;
-  background: #000000; /*color of the menu itself*/
+  background: #00ff00; /*färg på meny-bakgrunden*/
 }
 #cssmenu > ul > li {
   float: left;
@@ -92,12 +92,12 @@
   font-size: 12px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #ffffff;
+  color: #0000ff; /*färg på texten i CSS menyn*/
   font-weight: 700;
   text-transform: uppercase;
 }
 #cssmenu > ul > li:hover > a {
-  color: #ffffff;
+  color: #80000;
 }
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
@@ -109,7 +109,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #ff0000; /*färg, men irrelevant*/
   content: '';
 }
 #cssmenu > ul > li.has-sub > a:before {
@@ -119,7 +119,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #ff0000; /*färg, men irrelevant*/
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -172,7 +172,7 @@
   text-decoration: none;
   color: #dddddd;
   font-weight: 400;
-  background: #ffffff; /*submenu color*/
+  background: #ff0000; /*färg på drop down menyn*/
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
@@ -180,7 +180,7 @@
 }
 #cssmenu ul ul li:hover > a,
 #cssmenu ul ul li a:hover {
-  color: #ffffff;
+  color: #ffff00; /*färg på texten när du hovrar i dropdown*/
 }
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
@@ -189,7 +189,7 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
+  background: #551a8b; /*färg, men irrelevant*/
   content: '';
 }
 #cssmenu.align-right ul ul li.has-sub > a:after {
@@ -203,7 +203,7 @@
   display: block;
   width: 2px;
   height: 8px;
-  background: #dddddd;
+  background: #551a8b; /*färg men irrelevant*/
   content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
@@ -253,12 +253,12 @@
     padding-left: 35px;
   }
   #cssmenu ul ul li a {
-    color: #dddddd;
+    color: #551a8b; /*färg, men irrelevant*/
     background: none;
   }
   #cssmenu ul ul li:hover > a,
   #cssmenu ul ul li.active > a {
-    color: #ffffff;
+    color: #551a8b; /*färg, men irrelevant*/
   }
   #cssmenu ul ul,
   #cssmenu ul ul ul,
@@ -278,7 +278,7 @@
   #cssmenu #menu-button {
     display: block;
     padding: 17px;
-    color: #dddddd;
+    color: #551a8b; /*färg, men irrelevant*/
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
@@ -291,8 +291,8 @@
     display: block;
     height: 4px;
     width: 20px;
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
+    border-top: 2px solid #ffa500; /*skit i*/
+    border-bottom: 2px solid #ffa500; /*skit i*/
     content: '';
   }
   #cssmenu #menu-button:before {
@@ -302,7 +302,7 @@
     display: block;
     height: 2px;
     width: 20px;
-    background: #7B3F00;
+    background: #ffa500; /*skit i*/
     content: '';
   }
   #cssmenu #menu-button.menu-opened:after {
@@ -310,7 +310,7 @@
     border: 0;
     height: 2px;
     width: 15px;
-    background: #7B3F00;
+    background: #ffa500; /*skit i*/
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
